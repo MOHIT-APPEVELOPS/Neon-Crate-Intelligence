@@ -1,4 +1,4 @@
-package com.neon.crateintelligence.service
+package com.neon.crateintelligence
 
 import android.annotation.SuppressLint
 import android.app.AlarmManager
@@ -29,10 +29,6 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.app.NotificationCompat
-import com.neon.crateintelligence.R
-import com.neon.crateintelligence.engine.CrateProbabilityEngine
-import com.neon.crateintelligence.receiver.ServerResetAlarmReceiver
-import com.neon.crateintelligence.timing.PrecisionTimingSyncEngine
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
