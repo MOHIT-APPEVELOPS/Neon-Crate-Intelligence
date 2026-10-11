@@ -37,13 +37,13 @@
 
         <!-- 05:30 AM Server Reset Alarm Receiver -->
         <receiver
-            android:name=".receiver.ServerResetAlarmReceiver"
+            android:name=".ServerResetAlarmReceiver"
             android:enabled="true"
             android:exported="false" />
 
         <!-- Floating HUD Overlay Master Service -->
         <service
-            android:name=".service.FloatingCrateHudService"
+            android:name=".FloatingCrateHudService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="specialUse">
