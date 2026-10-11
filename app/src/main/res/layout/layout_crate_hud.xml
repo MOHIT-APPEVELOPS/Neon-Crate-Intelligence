@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hudRoot"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:background="#EB090D16"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:elevation="10dp">
+
+    <!-- Header & Sync Status -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/statusIndicator"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="#EF4444" />
+
+        <TextView
+            android:id="@+id/tvHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:text="SERVER SYNC"
+            android:textColor="#E2E8F0"
+            android:textSize="9sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Countdown Timer -->
+    <TextView
+        android:id="@+id/tvCountdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Reset: --:--:--"
+        android:textColor="#38BDF8"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <!-- Action Trigger State -->
+    <TextView
+        android:id="@+id/tvActionBanner"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="5dp"
+        android:background="#1E293B"
+        android:gravity="center"
+        android:text="CALIBRATING"
+        android:textColor="#94A3B8"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <!-- Odds & Pity Stats -->
+    <TextView
+        android:id="@+id/tvStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Odds: 0.5% | Pity: 0"
+        android:textColor="#94A3B8"
+        android:textSize="9sp" />
+
+    <!-- Control Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnTapSpin"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2563EB"
+            android:text="+1 Open"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="38dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="#475569"
+            android:text="R"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>
