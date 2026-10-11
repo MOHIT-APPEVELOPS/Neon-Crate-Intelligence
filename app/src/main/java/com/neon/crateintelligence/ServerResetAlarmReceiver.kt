@@ -1,4 +1,4 @@
-package com.neon.crateintelligence.receiver
+package com.neon.crateintelligence
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
