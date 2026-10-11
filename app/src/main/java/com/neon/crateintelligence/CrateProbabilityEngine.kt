@@ -49,4 +49,3 @@ object CrateProbabilityEngine {
         return SimulationResult(isMythic, isLegendary, roll)
     }
 }
-
