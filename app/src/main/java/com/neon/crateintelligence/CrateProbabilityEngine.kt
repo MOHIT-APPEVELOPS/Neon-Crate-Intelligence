@@ -1,4 +1,4 @@
-package com.neon.crateintelligence.engine
+package com.neon.crateintelligence
 
 import kotlin.math.pow
 import kotlin.random.Random
